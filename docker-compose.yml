@@ -1,0 +1,14 @@
+services:
+  yolo:
+    build:
+      context: .
+    # runtime: nvidia
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+    tty: true
+    stdin_open: true
+    volumes:
+      - .:/app
+      # - ./data:/app/data
+      # - ./models:/app/models
+    ipc: host
