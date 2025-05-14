@@ -9,6 +9,4 @@ services:
     stdin_open: true
     volumes:
       - .:/app
-      # - ./data:/app/data
-      # - ./models:/app/models
     ipc: host
