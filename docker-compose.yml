@@ -2,7 +2,7 @@ services:
   yolo:
     build:
       context: .
-    # runtime: nvidia
+    runtime: nvidia
     environment:
       - NVIDIA_VISIBLE_DEVICES=all
     tty: true
