@@ -5,3 +5,6 @@
 *.zip
 
 *.jpg
+
+.venv
+.envrc
